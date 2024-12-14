@@ -9,3 +9,5 @@ jobs:
     uses: ./.github/workflows/main.yml
     with:
       keyboard: '["ergodox_ez"]'
+      env:
+        MIRYOKU_MAPPING: SHIFTED_ROWS_EXTENDED_THUMBS
