@@ -3,11 +3,10 @@
 
 name: 'Build Example ergodox_ez'
 on:
-  - workflow_dispatch
+  workflow_dispatch:
 jobs:
   build:
     uses: ./.github/workflows/main.yml
     with:
       keyboard: '["ergodox_ez"]'
-      env:
-        MIRYOKU_MAPPING: SHIFTED_ROWS_EXTENDED_THUMBS
+      mapping: '["SHIFTED_ROWS_EXTENDED_THUMBS"]'
